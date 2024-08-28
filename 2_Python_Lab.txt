@@ -57,7 +57,13 @@ len(strc)
 
 14. Find the frequency of each characters in the string 
 
+from collections import Counter
+strfq = "aaabbbccc"
+char_freq = Counter(strfq)
+print("char_freq: ", char_freq)
+
 STDIN and File operators 
+
 15. get the file name from the user 
 Name= input("Enter file Name")
 
@@ -82,6 +88,25 @@ Math operations
     check the given number is prime or not 
     print the prime numbers with the given range 
 23. Check the given two numbers are co prime or not 
+
+def are_coprime(num1,num2):
+    while num2:
+        num1, num2 = num2, num1 % num2
+    return num1 == 1
+
+num1 = 25
+num2 = 22
+if are_coprime(num1, num2):
+    print(f"{num1} and {num2} are co-prime.")
+else:
+    print(f"{num1} and {num2} are not co-prime.")
+
 24. find the factors for the given number ( can use python library)
+
 25. generate 10 random numbers 
+
+import random
+num_list = random.sample(range(0, 500), 10)
+print(num_list)
+
 26. Explore : Miller-Rabin Test (pen paper method)
