@@ -91,12 +91,36 @@ Looping and File handling
 
 17. read the contents from the file 
 
+  with open(file_name, 'r') as file:
+        contents = file.read()
+        print("File contents:\n", contents)
+except FileNotFoundError:
+    print("File not found.")
+
 18. reverse the contents from the file
+   
+with open(file_name, 'r') as file:
+        contents = file.read()
+        reversed_contents = contents[::-1]
+        print("Reversed contents:\n", reversed_contents)
+except FileNotFoundError:
+    print("File not found.")
 
 19. Write into the file 
 
+text_to_write = "TEXT"
+with open(file_name, 'w') as file:
+    file.write(text_to_write)
+print("Text writte in file.")
+
 Math operations 
 20. convert Frequency in to percentage (continuation of 12th Question) 
+from collections import Counter
+strfq = "aaabbbccc"
+char_freq = Counter(strfq)
+print("char_freq: ", char_freq)
+
+
 21. Perform modular arithmetic operation 
 
 a = 17
@@ -153,3 +177,34 @@ num_list = random.sample(range(0, 500), 10)
 print(num_list)
 
 26. Explore : Miller-Rabin Test (pen paper method)
+
+def miller_rabin(n, k=5):
+    if n <= 1 or n == 4:
+        return False
+    if n <= 3:
+        return True
+
+    d = n - 1
+    r = 0
+    while d % 2 == 0:
+        d //= 2
+        r += 1
+
+    def check(a):
+        x = pow(a, d, n)
+        if x == 1 or x == n - 1:
+            return True
+        for _ in range(r - 1):
+            x = pow(x, 2, n)
+            if x == n - 1:
+                return True
+        return False
+
+    for _ in range(k):
+        a = random.randint(2, n - 2)
+        if not check(a):
+            return False
+    return True
+
+number_to_test = 37
+print(f"{number_to_test} ", miller_rabin(number_to_test))
