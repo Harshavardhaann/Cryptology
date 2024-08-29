@@ -1,4 +1,5 @@
 1. # The following line won't run because of a syntax error 
+
      print("hi)
      print("hi")
 
@@ -6,6 +7,7 @@
 ''' The following lines won't run properly,
     even if the syntax error in the line above is corrected,
     because of a run-time error '''
+
 print(hello)
 
 3. #  Display a string (greeting message) directly 
@@ -19,11 +21,13 @@ print(a)
 
 5. # Display the string which contains single quotes 
      Ex: Indian's
+
 a="Indian's"
 print(a)
 
 6. # Display the string which contains Double Quotes 
-     Ex: Students,"Welcome to SOIS". 
+     Ex: Students,"Welcome to SOIS".
+print("HELLO WORLD")
 
 6. Read two numbers in (user input) and store as num1 and num2, Calculate the sum, difference, product, Quotient, reminder, power
 
