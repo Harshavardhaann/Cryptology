@@ -27,7 +27,8 @@ print(a)
 
 6. # Display the string which contains Double Quotes 
      Ex: Students,"Welcome to SOIS".
-print("HELLO WORLD")
+
+print('"Students,"Welcome to SOIS"')
 
 6. Read two numbers in (user input) and store as num1 and num2, Calculate the sum, difference, product, Quotient, reminder, power
 
