@@ -124,23 +124,55 @@ print(Fullname)
 
 17. Display first two characters from the name 
 
+name = "Varshith Raj"
+print(name[:2])
+
 18. Display last three characters from the name 
+
+name = "Varshith Raj"
+print(name[-3:])
+
 
 19. Display 3rd character to last character 
 
+name = "Varshith Raj"
+print(name[3:])
+
 20. Display 3rd to 5th character 
+
+name = "Varshith Raj"
+print(name[3:5])
 
 21. Create a list of food with two elements.
 
+food_list = ["Idli", "Rice"]
+print(food_list)
+
 22. Add one more to the food list using .append()
 
+food_list = ["Idli", "Rice"]
+food_list.append("pizza")
+print(food_list)
+
 23. Add two more food strings to food using .extend()
+food_list = ["Idli", "Rice"]
+food_list.extend(["sambar", "Rice"])
+print(food_list)
 
 24. Count total number of items in the list 
 
+print(food_list)
+print(len(food_list))
+
 25. Print the first two items in food using slicing notation
 
+food_list = ["Idli", "Rice","sambar","puri"]
+print(food_list [0:2])
+
 26. Print the last item in food using index notation
+
+food_list = ["Idli", "Rice","sambar","puri"]
+print(food_list [-1])
 
 27. Debug: Program is to check the given number is odd or even 
 
