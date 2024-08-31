@@ -31,19 +31,64 @@ print(a)
 print('"Students,"Welcome to SOIS"')
 
 6. Read two numbers in (user input) and store as num1 and num2, Calculate the sum, difference, product, Quotient, reminder, power
+num1 = float(input("first number: "))
+num2= float(input("second number: "))
+
+sum = num1 + num2
+print(sum)
+
+difference= num1 - num2
+print(difference)
+
+product= num1*num2
+print(product)
+
+Quotient= num1/num2
+print(Quotient)
+
+remainder= num1%num2
+print(remainder)
+
+power= num1**num2
+print(power)
 
 7. check the value of num1 is integer or not? 
+num1 = float(input("Enter number: "))
+
+if num1.is_integer():
+    print("Integer.")
+else:
+    print("Not an integer.")
+
 
 8. convert into integer 
 
-9. Find the datatype for the variable num1 and num2. 
+num1 = int(num1)
+
+9. Find the datatype for the variable num1 and num2.
+
+num1 = float(input("Enter the Number: "))
+
+print(f"Datatype is: {type(num1)}")
+
+
 
 10. read the float value from the user and print the number rounded to 2 decimal places
 
+num = float(input("Enter a float value: "))
+rounded_num = round(num, 2)
+print(f"The rounded to 2 decimal places is: {rounded_num}")
+
+
 11. read the float value from the user and print the absolute value 
+
+a = float(input("Enter a float value: "))
+abs_value = abs(a)
+print("The value is:", abs_value)
 
 12. Store different type values in the variabale 
    String 
+
    numeric 
    complex 
    list 
@@ -56,10 +101,26 @@ print('"Students,"Welcome to SOIS"')
 14. # Display the number of letters in the string
     greeting = "Welcome to Python Programming"
 
+greeting = "Welcome to Python Programming"
+count = sum(1 for char in greeting if char.isalpha()) 
+print("Number of letters in string:", count)
+
 15. read the first name and last name from the user and combine first name and last name. combine name and greeting message
 
+Fname=input("First name:")
+Lname=input("Last name:")
+Fullname=Fname+" "+Lname
+greeting_message="Welcome to Python Programming, "+Fullname
+print(Fullname)
+print(greeting_message)
+
 16. Display the string with space 
-    Ex: firstname lastname 
+    Ex: firstname lastname
+
+Fname=input("First name:")
+Lname=input("Last name:")
+Fullname=(Fname+" "+Lname)
+print(Fullname)
 
 17. Display first two characters from the name 
 
