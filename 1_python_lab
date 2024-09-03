@@ -87,16 +87,30 @@ abs_value = abs(a)
 print("The value is:", abs_value)
 
 12. Store different type values in the variabale 
-   String 
+   String ::  string = "Hello world"
 
-   numeric 
-   complex 
-   list 
-   dictionary 
-   set 
-   tuple 
+   numeric :: integer = 24
+
+   complex ::complex = 2 + 3j
+
+   list :: list = [1, 2, 3, "hello", 2.5]
+
+   dictionary :: dict = {"Name": "He", "Age": 22, "City": "Udupi"}
+
+   set :: set = {4,5, "Cherry", 2.5}
+
+   tuple :: tuple = (1, 2, "mango", 4.5)
+
 
 13. Find the data type for the above variables 
+
+print(type(string))
+print(type(integer))
+print(type(complex))
+print(type(list))
+print(type(dict))
+print(type(set))
+print(type(tuple))
 
 14. # Display the number of letters in the string
     greeting = "Welcome to Python Programming"
@@ -183,13 +197,21 @@ if x == 0
 else
     print("The number is Odd.")
 
+after debug:
+number = input("Enter a number: ")
+x = int(number)/2 #int need to be used
+if x == 0: #semicolan missing
+    print("The number is Even.")
+else: #semicolan missing
+    print("The number is Odd.")
+
 28. Debug: Program is to convert centigrade to Fahrenheit
 c = input("Enter temperature in Centigrade: ")
-f = 9*(int(c)/5 +32
+f = 9*(int(c)/5 +32) #closing bracket missing
 print("Temperature in Fahrenheit is: ", f)
 
 29. Debug: 
-int = int(input("Enter the count of numbers: "))
+int = int(input("Enter the count of numbers: "))  #change int to count
 i = 0
 summ= 0
 for i in range(count):
@@ -201,3 +223,8 @@ print("The average is: ", avg)
 
 30. Prove : strings is not mutable 
             lists are mutable 
+Strings are Immutable
+When we try to modify string python will give error because strings cannot be changed once created.
+
+Lists are Mutable
+list Can be modified after they are created. we can change,add,or remove elements.
